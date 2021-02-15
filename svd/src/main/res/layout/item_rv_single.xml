@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <CheckedTextView
+        android:id="@+id/checked_text_item"
+        style="@style/MyTextContent"
+        android:layout_width="match_parent"
+        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+        android:checkMarkTint="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/def_margin"
+        android:paddingTop="@dimen/def_margin"
+        android:paddingRight="@dimen/def_margin"
+        android:paddingBottom="@dimen/def_margin" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/grey_400" />
+
+</LinearLayout>

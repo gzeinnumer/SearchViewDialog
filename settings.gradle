@@ -1,2 +1,3 @@
+include ':svd'
 include ':app'
 rootProject.name = "SearchViewDialog"

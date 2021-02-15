@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="h3">16sp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="def_margin">16dp</dimen>
+    <dimen name="space_between_edittext">10dp</dimen>
+</resources>
