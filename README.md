@@ -311,7 +311,7 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/S
 ---
 # Example Code/App
 
-**FullCode [MainActivity](https://github.com/gzeinnumer/SearchViewDialog/blob/master/app/src/main/java/com/gzeinnumer/mylibsearchviewdialog/MainActivity.java)**
+**FullCode [MainActivity](https://github.com/gzeinnumer/SearchViewDialog/blob/master/app/src/main/java/com/gzeinnumer/searchviewdialog/MainActivity.java)**
 
 [Sample Code And App](https://github.com/gzeinnumer/MyLibDialogSearchViewExample)
 
