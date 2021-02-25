@@ -177,31 +177,12 @@ use your `model pojo` to `callBack function`. Example `new SearchViewDialog.OnOk
 //For Single
 new SearchViewDialog<ExampleModel>(getSupportFragmentManager())
     .setItems(listObject)
-    .onOkPressedCallBackSingle(new SearchViewDialog.OnOkPressedSingle<ExampleModel>() {
-        @Override
-        public void onOkSingle(ExampleModel data) {
-            String temp = "Single Select : \n"+data.toString();
-            String temp = "Single Select : \n"+data.getName();
-            String temp = "Single Select : \n"+data.getAddress();
-            tv.setText(temp);
-        }
-    });
+    .onOkPressedCallBackSingle(...);
 
 //For Multi
 new SearchViewDialog<ExampleModel>(getSupportFragmentManager())
     .setItems(listObject)
-    .onOkPressedCallBackMulti(new SearchViewDialog.OnOkPressedMulti<ExampleModel>() {
-        @Override
-        public void onOkMulti(List<ExampleModel> data) {
-            String temp = "Multi Select :\n";
-            temp = temp + "Total Data => "+data.size()+"\n\n";
-            for (ExampleModel d: data){
-                temp = temp + "Value => "+d.getName()+"\n";
-                temp = temp + "Value => "+d.getAddress()+"\n";
-            }
-            tv.setText(temp);
-        }
-    });
+    .onOkPressedCallBackMulti(...);
 ```
 #
 - **Single Item Select**. Use `onOkPressedCallBackSingle` to enable `Single Select Item`.
