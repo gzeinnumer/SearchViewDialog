@@ -27,7 +27,7 @@ public abstract class BaseDialog extends DialogFragment {
     protected double canvasWidth = 0.9;
     protected boolean isFullScreen = false;
 
-    protected int animationStyle = R.style.DialogStyle_Slide;
+    protected int animationStyle = R.style.DialogStyle;
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
@@ -45,8 +45,6 @@ public abstract class BaseDialog extends DialogFragment {
     public void onStart() {
         super.onStart();
         getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-
-//        this.setCancelable(false);
 
         getDialog().setCancelable(false);
         getDialog().setCanceledOnTouchOutside(false);

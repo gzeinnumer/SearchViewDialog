@@ -7,19 +7,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AppTheme2" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/green_600</item>
-        <item name="colorPrimaryDark">@color/deep_orange_700</item>
-        <item name="colorAccent">@color/lime_A100</item>
-    </style>
-
     <style name="DialogStyle" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowMinWidthMajor">80%</item>
         <item name="android:windowMinWidthMinor">80%</item>
     </style>
 
     <style name="DialogStyle_In" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowMinWidthMajor">80%</item>
         <item name="android:windowMinWidthMinor">80%</item>
         <item name="android:windowEnterAnimation">@anim/anim_in</item>
@@ -27,6 +26,9 @@
     </style>
 
     <style name="DialogStyle_Slide" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowMinWidthMajor">80%</item>
         <item name="android:windowMinWidthMinor">80%</item>
         <item name="android:windowEnterAnimation">@anim/slide_up</item>
