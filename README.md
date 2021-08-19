@@ -6,7 +6,7 @@
 </h1>
 
 <div align="center">
-    <a><img src="https://img.shields.io/badge/Version-3.0.4-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-3.0.5-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -40,9 +40,11 @@ allprojects {
 // build.gradle app/module
 dependencies {
   ...
-  implementation 'com.github.gzeinnumer:SearchViewDialog:version'
-  implementation 'com.github.gzeinnumer:SimpleMaterialStyle:2.0.0'
   implementation 'com.google.android.material:material:1.2.1'
+  implementation 'com.github.gzeinnumer:SearchViewDialog:version'
+
+  implementation 'com.github.gzeinnumer:SimpleMaterialStyle:last-vesion'
+  //check on https://github.com/gzeinnumer/SimpleMaterialStyle
 }
 ```
 ---
@@ -78,7 +80,7 @@ dependencies {
 </style>
 ```
 
-If you want to change default color, add value to `res/color.xml`
+Add This Line to `res/color.xml`. **Important**
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
@@ -331,6 +333,8 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/S
 - **3.0.3**
   - Bug Fixing
 - **3.0.4**
+  - Bug Fixing
+- **3.0.5**
   - Bug Fixing
 
 ---
