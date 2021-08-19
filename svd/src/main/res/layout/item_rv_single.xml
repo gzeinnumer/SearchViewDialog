@@ -9,6 +9,7 @@
         android:id="@+id/checked_text_item"
         style="@style/MyTextContent"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:checkMark="?android:attr/listChoiceIndicatorSingle"
         android:checkMarkTint="@color/colorPrimary"
         android:gravity="center_vertical"
