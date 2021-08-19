@@ -324,19 +324,21 @@ public class SearchViewDialogSetting<T> extends BaseDialog implements MyHolderSi
 
             @Override
             public void afterTextChanged(Editable s) {
-                _adapter.getFilter().filter(s.toString());
+                if (_adapter!=null)
+                    _adapter.getFilter().filter(s.toString());
             }
         });
     }
 
     private void actionOk() {
-        List<T> selectedItems = _adapter.getSelectedItems();
-        Log.d(TAG, "actionOk: " + selectedItems);
-        if (selectedItems.size() > 0) {
-            if (type == SelectType.TYPE_SINGLE) {
-                onOkPressedSingle.onOkSingle(selectedItems.get(0));
-            } else {
-                onOkPressedMulti.onOkMulti(selectedItems);
+        if (_adapter!=null){
+            List<T> selectedItems = _adapter.getSelectedItems();
+            if (selectedItems.size() > 0) {
+                if (type == SelectType.TYPE_SINGLE) {
+                    onOkPressedSingle.onOkSingle(selectedItems.get(0));
+                } else {
+                    onOkPressedMulti.onOkMulti(selectedItems);
+                }
             }
         }
         getDialog().dismiss();
@@ -371,6 +373,5 @@ public class SearchViewDialogSetting<T> extends BaseDialog implements MyHolderSi
     @Override
     public void onItemSelected(BaseModel item) {
         List<BaseModel<T>> selectedItems = _adapter.getSelectedItems();
-        Log.d(TAG, "onItemSelected: " + selectedItems.size());
     }
 }

@@ -26,19 +26,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        listString.add("Lorem ipsum dolor");
-        listString.add("sit amet, consectetur");
-        listString.add("adipiscing elit, sed do");
-        listString.add("eiusmod tempor");
-        listString.add("incididunt ut labore et dolore");
-        listString.add("magna aliqua");
-        listString.add("Ut enim ad minim veniam, quis nostrud exercitation");
-        listString.add("ullamco laboris nisi ut aliquip");
-        listString.add("ex ea commodo consequat.");
-        listString.add("Duis aute irure dolor");
-        listString.add("in reprehenderit");
-        listString.add("in voluptate");
-        listString.add("velit esse cillum dolor");
+//        listString.add("Lorem ipsum dolor");
+//        listString.add("sit amet, consectetur");
+//        listString.add("adipiscing elit, sed do");
+//        listString.add("eiusmod tempor");
+//        listString.add("incididunt ut labore et dolore");
+//        listString.add("magna aliqua");
+//        listString.add("Ut enim ad minim veniam, quis nostrud exercitation");
+//        listString.add("ullamco laboris nisi ut aliquip");
+//        listString.add("ex ea commodo consequat.");
+//        listString.add("Duis aute irure dolor");
+//        listString.add("in reprehenderit");
+//        listString.add("in voluptate");
+//        listString.add("velit esse cillum dolor");
 
         initOnClick();
     }
@@ -51,38 +51,43 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //choise 1
-//                initDialogSingleGZeinNumer();
-                initDialogSingleGZeinNumer2();
+                initDialogSingleGZeinNumer();
+//                initDialogSingleGZeinNumer2();
             }
         });
     }
 
     private void initDialogSingleGZeinNumer() {
+        ArrayList<ExampleModel> listObject = new ArrayList<>();
+//        listObject.add(new ExampleModel(1, "Zein", "Balbar"));
+//        listObject.add(new ExampleModel(2, "Zein2", "Balbar2"));
+//        listObject.add(new ExampleModel(3, "Zein3", "Balbar3"));
+//        listObject.add(new ExampleModel(4, "Zein4", "Balbar4"));
 
-        String[] arrayString = {"M", "Fadli", "Zein"};
-        new SearchViewDialog<String>(getSupportFragmentManager())
-                .setItems(arrayString)
+//        String[] arrayString = {"M", "Fadli", "Zein"};
+        new SearchViewDialog<ExampleModel>(getSupportFragmentManager())
+                .setItems(listObject)
                 .setTitle("ini title")
                 .setContent("ini content")
                 .setButtonStyle(ButtonStyle.ButtonContained)
-                .onOkPressedCallBackSingle(new SearchViewDialog.OnOkPressedSingle<String>() {
+                .onOkPressedCallBackSingle(new SearchViewDialog.OnOkPressedSingle<ExampleModel>() {
                     @Override
-                    public void onOkSingle(String data) {
-                        String temp = "Single Select : \n" + data;
+                    public void onOkSingle(ExampleModel data) {
+                        String temp = "Single Select : \n" + data.toString();
                         tv.setText(temp);
                     }
                 })
-                .onOkPressedCallBackMulti(new SearchViewDialog.OnOkPressedMulti<String>() {
-                    @Override
-                    public void onOkMulti(List<String> data) {
-                        String temp = "Multi Select :\n";
-                        temp = temp + "Total Data => " + data.size() + "\n\n";
-                        for (String d : data) {
-                            temp = temp + "Value => " + d + "\n";
-                        }
-                        tv.setText(temp);
-                    }
-                })
+//                .onOkPressedCallBackMulti(new SearchViewDialog.OnOkPressedMulti<String>() {
+//                    @Override
+//                    public void onOkMulti(List<String> data) {
+//                        String temp = "Multi Select :\n";
+//                        temp = temp + "Total Data => " + data.size() + "\n\n";
+//                        for (String d : data) {
+//                            temp = temp + "Value => " + d + "\n";
+//                        }
+//                        tv.setText(temp);
+//                    }
+//                })
                 .onCancelPressedCallBack(new SearchViewDialog.OnCancelPressed() {
                     @Override
                     public void onCancelPressed() {
@@ -95,10 +100,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void initDialogSingleGZeinNumer2() {
         ArrayList<ExampleModel> listObject = new ArrayList<>();
-        listObject.add(new ExampleModel(1, "Zein", "Balbar"));
-        listObject.add(new ExampleModel(2, "Zein2", "Balbar2"));
-        listObject.add(new ExampleModel(3, "Zein3", "Balbar3"));
-        listObject.add(new ExampleModel(4, "Zein4", "Balbar4"));
+//        listObject.add(new ExampleModel(1, "Zein", "Balbar"));
+//        listObject.add(new ExampleModel(2, "Zein2", "Balbar2"));
+//        listObject.add(new ExampleModel(3, "Zein3", "Balbar3"));
+//        listObject.add(new ExampleModel(4, "Zein4", "Balbar4"));
 
         new SearchViewDialog<ExampleModel>(getSupportFragmentManager())
                 .setAnimationStyle(R.style.DialogStyle_In)
