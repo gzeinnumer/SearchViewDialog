@@ -18,10 +18,10 @@ public class MyHolderSingle<T> extends RecyclerView.ViewHolder {
 
     public static final int MULTI_SELECTION = 2;
     public static final int SINGLE_SELECTION = 1;
-    CheckedTextView textView;
-    BaseModel<T> mItem;
-    LinearLayout parent;
-    OnItemSelectedListener itemSelectedListener;
+    private CheckedTextView textView;
+    private BaseModel<T> mItem;
+    private LinearLayout parent;
+    private OnItemSelectedListener itemSelectedListener;
 
     public MyHolderSingle(@NonNull View view, OnItemSelectedListener listener) {
         super(view);

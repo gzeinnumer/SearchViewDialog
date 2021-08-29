@@ -25,6 +25,8 @@ public class RvItemAdapter<T> extends RecyclerView.Adapter implements Filterable
     public ArrayList<BaseModel<T>> list;
     public ArrayList<BaseModel<T>> listReal;
     public ArrayList<BaseModel<T>> listFilter;
+    private int TYPE;
+    private MyHolderSingle.OnItemSelectedListener listener;
     private final Filter exampleFilter = new Filter() {
         @Override
         protected FilterResults performFiltering(CharSequence constraint) {
@@ -58,8 +60,6 @@ public class RvItemAdapter<T> extends RecyclerView.Adapter implements Filterable
             notifyDataSetChanged();
         }
     };
-    int TYPE;
-    MyHolderSingle.OnItemSelectedListener listener;
 
     public RvItemAdapter(int type, MyHolderSingle.OnItemSelectedListener listener,
                          List<T> items) {
@@ -114,7 +114,7 @@ public class RvItemAdapter<T> extends RecyclerView.Adapter implements Filterable
     @Override
     public void onItemSelected(BaseModel item) {
         if (TYPE == SelectType.TYPE_SINGLE) {
-            for (BaseModel<T> selectableItem : list) {
+            for (BaseModel<T> selectableItem : listReal) {
                 if (!selectableItem.equals(item)
                         && selectableItem.isChecked()) {
                     selectableItem.setChecked(false);

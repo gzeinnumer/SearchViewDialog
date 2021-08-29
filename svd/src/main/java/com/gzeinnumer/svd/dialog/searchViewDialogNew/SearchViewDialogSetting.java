@@ -68,7 +68,7 @@ public class SearchViewDialogSetting<T> extends BaseDialog implements MyHolderSi
     protected int textSearchColor = -100;
     protected int textListSize = -100;
     protected int textSearchSize = -100;
-    List<BaseModel<T>> selectedItems;
+    private List<BaseModel<T>> selectedItems;
     private View _view;
     private LinearLayout _dialogCanvas;
     private LinearLayout _parentButton;
