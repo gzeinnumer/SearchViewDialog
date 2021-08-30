@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //choise 1
-                initDialogSingleGZeinNumer();
-//                initDialogSingleGZeinNumer2();
+//                initDialogSingleGZeinNumer();
+                initDialogSingleGZeinNumer2();
             }
         });
     }
@@ -100,10 +100,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void initDialogSingleGZeinNumer2() {
         ArrayList<ExampleModel> listObject = new ArrayList<>();
-//        listObject.add(new ExampleModel(1, "Zein", "Balbar"));
-//        listObject.add(new ExampleModel(2, "Zein2", "Balbar2"));
-//        listObject.add(new ExampleModel(3, "Zein3", "Balbar3"));
-//        listObject.add(new ExampleModel(4, "Zein4", "Balbar4"));
+        listObject.add(new ExampleModel(1, "Zein", "Balbar"));
+        listObject.add(new ExampleModel(2, "Zein2", "Balbar2"));
+        listObject.add(new ExampleModel(3, "Zein3", "Balbar3"));
+        listObject.add(new ExampleModel(4, "Zein4", "Balbar4"));
 
         new SearchViewDialog<ExampleModel>(getSupportFragmentManager())
                 .setAnimationStyle(R.style.DialogStyle_In)
