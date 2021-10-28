@@ -73,7 +73,7 @@
                 style="@style/MyButtonText"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/button_height"
-                android:layout_marginEnd="@dimen/def_margin"
+                android:layout_marginEnd="@dimen/def_margin_half"
                 android:text="@string/cancel"
                 android:visibility="gone"
                 tools:visibility="visible" />
@@ -92,7 +92,7 @@
                 style="@style/MyButtonOutlined"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/button_height"
-                android:layout_marginEnd="@dimen/def_margin"
+                android:layout_marginEnd="@dimen/def_margin_half"
                 android:text="@string/cancel"
                 android:visibility="gone" />
 
