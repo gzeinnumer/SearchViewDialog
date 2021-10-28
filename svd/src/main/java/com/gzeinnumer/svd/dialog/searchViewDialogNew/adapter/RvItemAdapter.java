@@ -1,5 +1,7 @@
 package com.gzeinnumer.svd.dialog.searchViewDialogNew.adapter;
 
+import android.content.Context;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +29,7 @@ public class RvItemAdapter<T> extends RecyclerView.Adapter implements Filterable
     public ArrayList<BaseModel<T>> listFilter;
     private int TYPE;
     private MyHolderSingle.OnItemSelectedListener listener;
+    private Context context;
     private final Filter exampleFilter = new Filter() {
         @Override
         protected FilterResults performFiltering(CharSequence constraint) {
@@ -77,13 +80,32 @@ public class RvItemAdapter<T> extends RecyclerView.Adapter implements Filterable
     @NonNull
     @Override
     public MyHolderSingle onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        this.context = parent.getContext();
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_rv_single, parent, false);
         return new MyHolderSingle<T>(itemView, this);
     }
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, int position) {
-        ((MyHolderSingle) viewHolder).bind(TYPE, list.get(position));
+        MyHolderSingle holder = (MyHolderSingle) viewHolder;
+
+        ViewGroup.MarginLayoutParams layoutParams = (ViewGroup.MarginLayoutParams) holder.cardView.getLayoutParams();
+        int t = 5; //out
+        int h = 5; //out
+        int m = 10; //top-bottom
+//        int l = m / 2; //center
+        int l = 4; //center
+        if (position == 0) {
+            layoutParams.setMargins(intToDp(h), intToDp(t), intToDp(h), intToDp(l));
+            holder.cardView.setLayoutParams(layoutParams);
+        } else if (position == list.size() - 1) {
+            layoutParams.setMargins(intToDp(h), intToDp(l), intToDp(h), intToDp(t));
+            holder.cardView.setLayoutParams(layoutParams);
+        } else {
+            layoutParams.setMargins(intToDp(h), intToDp(l), intToDp(h), intToDp(l));
+            holder.cardView.setLayoutParams(layoutParams);
+        }
+        holder.bind(TYPE, list.get(position));
     }
 
     public List<T> getSelectedItems() {
@@ -139,5 +161,9 @@ public class RvItemAdapter<T> extends RecyclerView.Adapter implements Filterable
     @Override
     public Filter getFilter() {
         return exampleFilter;
+    }
+
+    public int intToDp(int sizeInDPH) {
+        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, sizeInDPH, context.getResources().getDisplayMetrics());
     }
 }
