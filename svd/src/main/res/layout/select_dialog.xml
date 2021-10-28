@@ -35,7 +35,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/parent_ed_search"
-            style="@style/MyTextInputLayoutOutlinedBox.Spesial.V2"
+            style="@style/MyTextInputLayoutOutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Filter"
@@ -43,7 +43,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/ed_search"
-                style="@style/MyTextInputEditText.Spesial.V2"
+                style="@style/MyTextInputEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
