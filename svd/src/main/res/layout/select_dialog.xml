@@ -31,7 +31,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_half"
-            android:layout_marginBottom="@dimen/text_margin"
             android:text="@string/content_dialog" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -39,8 +38,6 @@
             style="@style/MyTextInputLayoutOutlinedBox.Spesial.V2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="10dp"
             android:hint="Filter"
             app:startIconDrawable="@drawable/ic_baseline_search_24">
 
@@ -56,13 +53,14 @@
             android:id="@+id/rv_item"
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:layout_marginBottom="@dimen/space"
+            android:layout_marginTop="@dimen/space"
             android:background="@drawable/corner_rv"
             tools:listitem="@layout/item_rv_single"
             android:nestedScrollingEnabled="false"
             android:overScrollMode="never" />
 
         <LinearLayout
+            android:layout_marginTop="@dimen/space"
             android:id="@+id/parent_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

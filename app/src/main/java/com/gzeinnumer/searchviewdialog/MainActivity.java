@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
                 .setAnimationStyle(R.style.DialogStyle_In)
                 .setItems(listObject)
                 .setTitle("ini title")
-                .setContent("ini content")
+//                .setContent("ini content")
                 .setButtonStyle(ButtonStyle.ButtonContained)
                 .onOkPressedCallBackSingle(new SearchViewDialog.OnOkPressedSingle<ExampleModel>() {
                     @Override
