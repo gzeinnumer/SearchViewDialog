@@ -11,8 +11,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="@dimen/def_margin">
@@ -20,51 +19,51 @@
         <TextView
             android:id="@+id/tv_title"
             style="@style/MyTextHeader"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
-            android:layout_marginBottom="10dp"
             android:text="@string/title_dialog"
             android:textAlignment="center" />
 
         <TextView
             android:id="@+id/tv_content"
             style="@style/MyTextContent"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="@dimen/text_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_half"
             android:text="@string/content_dialog" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/parent_ed_search"
-            style="@style/MyTextInputLayoutOutlinedBox"
+            style="@style/MyTextInputLayoutOutlinedBox.Spesial.V2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="10dp"
             android:hint="Filter"
             app:startIconDrawable="@drawable/ic_baseline_search_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/ed_search"
+                style="@style/MyTextInputEditText.Spesial.V2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/MyTextInputEditText" />
+                android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_item"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/text_margin"
+            android:layout_height="0dp"
             android:layout_weight="1"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginTop="@dimen/space"
             android:background="@drawable/corner_rv"
+            tools:listitem="@layout/item_rv_single"
             android:nestedScrollingEnabled="false"
             android:overScrollMode="never" />
 
         <LinearLayout
+            android:layout_marginTop="@dimen/space"
             android:id="@+id/parent_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -100,26 +99,26 @@
 
             <Button
                 android:id="@+id/d_btn_ok_MBO"
+                style="@style/MyButtonOutlined"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/button_height"
-                style="@style/MyButtonOutlined"
                 android:text="@string/ok"
                 android:visibility="gone" />
 
             <Button
                 android:id="@+id/d_btn_cancel_MBC"
                 style="@style/MyButtonContained"
-                android:layout_marginEnd="@dimen/def_margin"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/button_height"
+                android:layout_marginEnd="@dimen/def_margin"
                 android:text="@string/cancel"
                 android:visibility="gone" />
 
             <Button
                 android:id="@+id/d_btn_ok_MBC"
+                style="@style/MyButtonContained"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/button_height"
-                style="@style/MyButtonContained"
                 android:text="@string/ok"
                 android:visibility="gone" />
 

@@ -53,6 +53,8 @@
             android:id="@+id/rv_item"
             android:layout_width="match_parent"
             android:layout_height="350dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
             android:layout_marginTop="@dimen/space"
             android:background="@drawable/corner_rv"
             tools:listitem="@layout/item_rv_single"
