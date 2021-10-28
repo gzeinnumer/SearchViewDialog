@@ -88,23 +88,6 @@ public class RvItemAdapter<T> extends RecyclerView.Adapter implements Filterable
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, int position) {
         MyHolderSingle holder = (MyHolderSingle) viewHolder;
-
-        ViewGroup.MarginLayoutParams layoutParams = (ViewGroup.MarginLayoutParams) holder.cardView.getLayoutParams();
-        int t = 5; //out
-        int h = 5; //out
-        int m = 10; //top-bottom
-//        int l = m / 2; //center
-        int l = 4; //center
-        if (position == 0) {
-            layoutParams.setMargins(intToDp(h), intToDp(t), intToDp(h), intToDp(l));
-            holder.cardView.setLayoutParams(layoutParams);
-        } else if (position == list.size() - 1) {
-            layoutParams.setMargins(intToDp(h), intToDp(l), intToDp(h), intToDp(t));
-            holder.cardView.setLayoutParams(layoutParams);
-        } else {
-            layoutParams.setMargins(intToDp(h), intToDp(l), intToDp(h), intToDp(l));
-            holder.cardView.setLayoutParams(layoutParams);
-        }
         holder.bind(TYPE, list.get(position));
     }
 
