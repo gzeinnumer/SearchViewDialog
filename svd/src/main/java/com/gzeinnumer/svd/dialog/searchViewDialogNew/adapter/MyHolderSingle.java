@@ -44,9 +44,9 @@ public class MyHolderSingle<T> extends RecyclerView.ViewHolder {
 
     public void setChecked(boolean value) {
         if (value) {
-            textView.setBackgroundColor(Color.LTGRAY);
+            cardView.setCardBackgroundColor(Color.LTGRAY);
         } else {
-            textView.setBackground(null);
+            cardView.setCardBackgroundColor(Color.WHITE);
         }
         mItem.setChecked(value);
         textView.setChecked(value);
