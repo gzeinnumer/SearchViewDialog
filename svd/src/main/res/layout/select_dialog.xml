@@ -43,7 +43,7 @@
 
             <AutoCompleteTextView
                 android:id="@+id/ed_search"
-                style="@style/MyTextInputEditText.Spesial.V2"
+                style="@style/MyTextInputEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
