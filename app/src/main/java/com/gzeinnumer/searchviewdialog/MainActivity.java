@@ -113,10 +113,10 @@ public class MainActivity extends AppCompatActivity {
         new SearchViewDialog<ExampleModel>(getSupportFragmentManager())
                 .setAnimationStyle(R.style.DialogStyle_In)
                 .setItems(listObject)
-                .setTitle("ini title")
+                .setTitle("Version 3.1.+")
 //                .setContent("ini content")
                 .setButtonStyle(ButtonStyle.ButtonContained)
-                .enableFullScreen()
+//                .enableFullScreen()
                 .onOkPressedCallBackSingle(new SearchViewDialog.OnOkPressedSingle<ExampleModel>() {
                     @Override
                     public void onOkSingle(ExampleModel data) {

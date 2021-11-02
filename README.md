@@ -1,5 +1,5 @@
-| <img src="https://github.com/gzeinnumer/SearchViewDialog/blob/master/preview/MyLibDialogSearchView_2.jpg" width="300"/> | <img src="https://github.com/gzeinnumer/SearchViewDialog/blob/master/preview/MyLibDialogSearchView_5.jpg" width="300"/> | <img src="https://github.com/gzeinnumer/SearchViewDialog/blob/master/preview/MyLibDialogSearchView_6.jpg" width="300"/> |
-|:-----------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------|
+| <img src="https://github.com/gzeinnumer/SearchViewDialog/blob/master/preview/MyLibDialogSearchView_2.jpg" width="300"/> | <img src="https://github.com/gzeinnumer/SearchViewDialog/blob/master/preview/MyLibDialogSearchView_5.jpg" width="300"/> | <img src="https://github.com/gzeinnumer/SearchViewDialog/blob/master/preview/MyLibDialogSearchView_6.jpg" width="300"/> | <img src="https://github.com/gzeinnumer/SearchViewDialog/blob/master/preview/MyLibDialogSearchView_22.jpg" width="300"/> |
+|--|--|--|--|
 
 <h1 align="center">
   SearchViewDialog - Easy Drop Down
