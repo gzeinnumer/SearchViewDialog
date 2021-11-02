@@ -116,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
                 .setTitle("ini title")
 //                .setContent("ini content")
                 .setButtonStyle(ButtonStyle.ButtonContained)
+                .enableFullScreen()
                 .onOkPressedCallBackSingle(new SearchViewDialog.OnOkPressedSingle<ExampleModel>() {
                     @Override
                     public void onOkSingle(ExampleModel data) {
