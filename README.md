@@ -1,12 +1,12 @@
-| <img src="https://github.com/gzeinnumer/SearchViewDialog/blob/master/preview/MyLibDialogSearchView_2.jpg" width="300"/> | <img src="https://github.com/gzeinnumer/SearchViewDialog/blob/master/preview/MyLibDialogSearchView_5.jpg" width="300"/> | <img src="https://github.com/gzeinnumer/SearchViewDialog/blob/master/preview/MyLibDialogSearchView_6.jpg" width="300"/> |
-|:-----------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------|
+| <img src="https://github.com/gzeinnumer/SearchViewDialog/blob/master/preview/MyLibDialogSearchView_2.jpg" width="300"/> | <img src="https://github.com/gzeinnumer/SearchViewDialog/blob/master/preview/MyLibDialogSearchView_5.jpg" width="300"/> | <img src="https://github.com/gzeinnumer/SearchViewDialog/blob/master/preview/MyLibDialogSearchView_6.jpg" width="300"/> | <img src="https://github.com/gzeinnumer/SearchViewDialog/blob/master/preview/MyLibDialogSearchView_22.jpg" width="300"/> |
+|--|--|--|--|
 
 <h1 align="center">
   SearchViewDialog - Easy Drop Down
 </h1>
 
 <div align="center">
-    <a><img src="https://img.shields.io/badge/Version-3.0.8-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-3.1.0-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -342,6 +342,8 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/S
   - Bug Fixing
 - **3.0.7**
   - Fixing Space
+- **3.1.0**
+  - New Style
 
 ---
 # Contribution
