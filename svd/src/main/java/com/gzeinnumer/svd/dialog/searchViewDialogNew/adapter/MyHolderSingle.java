@@ -22,6 +22,7 @@ public class MyHolderSingle<T> extends RecyclerView.ViewHolder {
     private CheckedTextView textView;
     private BaseModel<T> mItem;
     private LinearLayout parent;
+    public CardView cardView;
     private OnItemSelectedListener itemSelectedListener;
 
     public MyHolderSingle(@NonNull View view, OnItemSelectedListener listener) {
@@ -30,6 +31,7 @@ public class MyHolderSingle<T> extends RecyclerView.ViewHolder {
 
         textView = view.findViewById(R.id.checked_text_item);
         parent = view.findViewById(R.id.parent);
+        cardView = view.findViewById(R.id.cv);
 
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,9 +44,9 @@ public class MyHolderSingle<T> extends RecyclerView.ViewHolder {
 
     public void setChecked(boolean value) {
         if (value) {
-            textView.setBackgroundColor(Color.LTGRAY);
+            cardView.setCardBackgroundColor(Color.LTGRAY);
         } else {
-            textView.setBackground(null);
+            cardView.setCardBackgroundColor(Color.WHITE);
         }
         mItem.setChecked(value);
         textView.setChecked(value);
