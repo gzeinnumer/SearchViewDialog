@@ -6,7 +6,7 @@
 </h1>
 
 <div align="center">
-    <a><img src="https://img.shields.io/badge/Version-3.1.0-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-3.1.2-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -344,6 +344,8 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/S
   - Fixing Space
 - **3.1.0**
   - New Style
+- **3.1.2**
+  - Bug Fixing
 
 ---
 # Contribution

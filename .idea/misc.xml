@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1234375" />
+        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.290625" />
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/drawable/background_dynamic_menus.xml" value="0.24259259259259258" />
+        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/drawable/bdm_background_dynamic_menus.xml" value="0.4036458333333333" />
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/drawable/bdm_ic_search_normal.xml" value="0.24259259259259258" />
+        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/drawable/black_cursor.xml" value="0.4036458333333333" />
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/drawable/corner_rv.xml" value="0.4036458333333333" />
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/drawable/dialog_shadow.xml" value="0.4036458333333333" />
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/drawable/ic_baseline_add_24.xml" value="0.23645833333333333" />
@@ -13,11 +17,15 @@
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/drawable/ic_baseline_remove_24.xml" value="0.4036458333333333" />
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/drawable/ic_baseline_search_24.xml" value="0.4036458333333333" />
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/drawable/ic_launcher_background.xml" value="0.4036458333333333" />
+        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/drawable/ic_launcher_foreground.xml" value="0.4036458333333333" />
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/drawable/ic_outline_sort_by_alpha_24.xml" value="0.4036458333333333" />
+        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/drawable/mygzn_text_input_edittext_white_filter.xml" value="0.23282051282051283" />
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/drawable/rounded_corner.xml" value="0.4036458333333333" />
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/drawable/svd_background.xml" value="0.4036458333333333" />
+        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/layout/bdm_select_dialog.xml" value="0.3875" />
+        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/layout/bdm_select_dialog_fullscreen.xml" value="0.2203125" />
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/layout/item_rv_single.xml" value="0.1" />
-        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/layout/select_dialog.xml" value="0.34025974025974026" />
+        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/layout/select_dialog.xml" value="0.3875" />
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/layout/select_dialog_fullscreen.xml" value="0.21927083333333333" />
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/layout/select_dialog_fullscreen_style.xml" value="0.3875" />
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/SearchViewDialog/svd/src/main/res/layout/select_dialog_style.xml" value="0.3875" />

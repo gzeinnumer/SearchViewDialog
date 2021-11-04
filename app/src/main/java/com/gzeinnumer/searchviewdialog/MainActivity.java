@@ -124,18 +124,18 @@ public class MainActivity extends AppCompatActivity {
                         tv.setText(temp);
                     }
                 })
-                .onOkPressedCallBackMulti(new SearchViewDialog.OnOkPressedMulti<ExampleModel>() {
-                    @Override
-                    public void onOkMulti(List<ExampleModel> data) {
-                        String temp = "Multi Select :\n";
-                        temp = temp + "Total Data => " + data.size() + "\n\n";
-                        for (ExampleModel d : data) {
-                            temp = temp + "Value => " + d.getName() + "\n";
-                            temp = temp + "Value => " + d.getAddress() + "\n";
-                        }
-                        tv.setText(temp);
-                    }
-                })
+//                .onOkPressedCallBackMulti(new SearchViewDialog.OnOkPressedMulti<ExampleModel>() {
+//                    @Override
+//                    public void onOkMulti(List<ExampleModel> data) {
+//                        String temp = "Multi Select :\n";
+//                        temp = temp + "Total Data => " + data.size() + "\n\n";
+//                        for (ExampleModel d : data) {
+//                            temp = temp + "Value => " + d.getName() + "\n";
+//                            temp = temp + "Value => " + d.getAddress() + "\n";
+//                        }
+//                        tv.setText(temp);
+//                    }
+//                })
                 .onCancelPressedCallBack(new SearchViewDialog.OnCancelPressed() {
                     @Override
                     public void onCancelPressed() {

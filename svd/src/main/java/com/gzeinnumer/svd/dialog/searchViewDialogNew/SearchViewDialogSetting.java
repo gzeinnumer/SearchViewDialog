@@ -5,10 +5,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -82,7 +80,7 @@ public class SearchViewDialogSetting<T> extends BaseDialog implements MyHolderSi
     private Button _dBtnOkMBO;
     private Button _dBtnOkMBC;
     private RecyclerView _rv;
-    private AutoCompleteTextView _edSearch;
+    private TextInputEditText _edSearch;
     private RvItemAdapter _adapter;
 
     private void initView() {
@@ -103,9 +101,9 @@ public class SearchViewDialogSetting<T> extends BaseDialog implements MyHolderSi
     @Override
     protected int contentView() {
         if (isFullScreen) {
-            return R.layout.select_dialog_fullscreen;
+            return R.layout.svd_select_dialog_fullscreen;
         } else {
-            return R.layout.select_dialog;
+            return R.layout.svd_select_dialog;
         }
     }
 
