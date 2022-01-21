@@ -14,7 +14,12 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="@dimen/def_margin">
+        android:paddingStart="@dimen/def_margin_dialog_left"
+        android:paddingLeft="@dimen/def_margin_dialog_left"
+        android:paddingTop="@dimen/def_margin_dialog_top"
+        android:paddingEnd="@dimen/def_margin_dialog_right"
+        android:paddingRight="@dimen/def_margin_dialog_right"
+        android:paddingBottom="@dimen/def_margin_dialog_bottom">
 
         <TextView
             android:id="@+id/tv_title"
