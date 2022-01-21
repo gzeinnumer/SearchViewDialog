@@ -75,6 +75,7 @@
                 android:minWidth="0dp"
                 android:minHeight="0dp"
                 android:id="@+id/d_btn_cancel_MBT"
+                android:layout_marginStart="@dimen/def_margin_half"
                 style="@style/MyButtonText"
                 android:layout_marginEnd="@dimen/def_margin"
                 android:text="@string/cancel"
