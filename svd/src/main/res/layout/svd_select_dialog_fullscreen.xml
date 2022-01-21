@@ -72,20 +72,24 @@
             android:gravity="end">
 
             <Button
+                android:minWidth="0dp"
+                android:minHeight="0dp"
                 android:id="@+id/d_btn_cancel_MBT"
                 style="@style/MyButtonText"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/button_height"
                 android:layout_marginEnd="@dimen/def_margin"
                 android:text="@string/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:visibility="gone"
                 tools:visibility="visible" />
 
             <Button
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/d_btn_ok_MBT"
                 style="@style/MyButtonText"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/button_height"
                 android:text="@string/ok"
                 android:visibility="gone"
                 tools:visibility="visible" />

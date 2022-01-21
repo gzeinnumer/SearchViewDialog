@@ -64,7 +64,7 @@
             android:overScrollMode="never" />
 
         <LinearLayout
-            android:layout_marginTop="@dimen/space"
+            android:layout_marginTop="@dimen/def_margin_half"
             android:id="@+id/parent_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -73,8 +73,10 @@
             <Button
                 android:id="@+id/d_btn_cancel_MBT"
                 style="@style/MyButtonText"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/button_height"
+                android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/def_margin"
                 android:text="@string/cancel"
                 android:visibility="gone"
@@ -83,9 +85,11 @@
             <Button
                 android:id="@+id/d_btn_ok_MBT"
                 style="@style/MyButtonText"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/button_height"
                 android:text="@string/ok"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:visibility="gone"
                 tools:visibility="visible" />
 
