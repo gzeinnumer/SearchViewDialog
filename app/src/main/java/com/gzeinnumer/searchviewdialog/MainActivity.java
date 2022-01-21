@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 .setItems(listObject)
                 .setTitle("ini title")
                 .setContent("ini content")
-                .setButtonStyle(ButtonStyle.ButtonContained)
+                .setButtonStyle(ButtonStyle.ButtonText)
                 .onOkPressedCallBackSingle(new SearchViewDialog.OnOkPressedSingle<ExampleModel>() {
                     @Override
                     public void onOkSingle(ExampleModel data) {
@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
                 .setItems(listObject)
                 .setTitle("Version 3.1.+")
 //                .setContent("ini content")
-                .setButtonStyle(ButtonStyle.ButtonContained)
+                .setButtonStyle(ButtonStyle.ButtonText)
 //                .enableFullScreen()
                 .onOkPressedCallBackSingle(new SearchViewDialog.OnOkPressedSingle<ExampleModel>() {
                     @Override

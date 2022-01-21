@@ -41,9 +41,9 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ed_search_p"
             style="@style/MyTextInputLayoutOutlinedBox.Spesial.V3.Search"
+            android:hint="Search"
             app:hintTextColor="@color/colorPrimary"
-            app:startIconDrawable="@drawable/ic_search_normal"
-            android:hint="Search">
+            app:startIconDrawable="@drawable/ic_search_normal">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/ed_search"
@@ -55,29 +55,29 @@
             android:id="@+id/rv_item"
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:paddingTop="2dp"
-            android:paddingBottom="2dp"
             android:layout_marginTop="@dimen/space"
             android:background="@drawable/svd_corner_rv"
-            tools:listitem="@layout/svd_item_rv_single"
             android:nestedScrollingEnabled="false"
-            android:overScrollMode="never" />
+            android:overScrollMode="never"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            tools:listitem="@layout/svd_item_rv_single" />
 
         <LinearLayout
-            android:layout_marginTop="@dimen/def_margin_half"
             android:id="@+id/parent_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/def_margin_half"
             android:gravity="end">
 
             <Button
                 android:id="@+id/d_btn_cancel_MBT"
                 style="@style/MyButtonText"
-                android:minWidth="0dp"
-                android:minHeight="0dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/def_margin"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
                 android:text="@string/cancel"
                 android:visibility="gone"
                 tools:visibility="visible" />
@@ -85,11 +85,11 @@
             <Button
                 android:id="@+id/d_btn_ok_MBT"
                 style="@style/MyButtonText"
-                android:text="@string/ok"
-                android:minWidth="0dp"
-                android:minHeight="0dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="@string/ok"
                 android:visibility="gone"
                 tools:visibility="visible" />
 
