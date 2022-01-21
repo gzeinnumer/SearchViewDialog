@@ -90,6 +90,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/d_btn_ok_MBT"
                 style="@style/MyButtonText"
+                android:layout_marginEnd="@dimen/def_margin_half"
                 android:text="@string/ok"
                 android:visibility="gone"
                 tools:visibility="visible" />
