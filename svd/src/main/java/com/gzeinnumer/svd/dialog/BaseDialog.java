@@ -26,6 +26,7 @@ public abstract class BaseDialog extends DialogFragment {
 
     protected double canvasWidth = 0.9;
     protected boolean isFullScreen = false;
+    protected boolean enableFilter = true;
 
     protected int animationStyle = R.style.DialogStyle;
 
