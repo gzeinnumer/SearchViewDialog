@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.gzeinnumer.svd.R;
 import com.gzeinnumer.svd.constant.ButtonStyle;
 import com.gzeinnumer.svd.constant.SelectType;
@@ -81,6 +82,7 @@ public class SearchViewDialogSetting<T> extends BaseDialog implements MyHolderSi
     private Button _dBtnOkMBC;
     private RecyclerView _rv;
     private TextInputEditText _edSearch;
+    private TextInputLayout _edSearchP;
     private RvItemAdapter _adapter;
 
     private void initView() {
@@ -96,6 +98,7 @@ public class SearchViewDialogSetting<T> extends BaseDialog implements MyHolderSi
         _dBtnOkMBC = _view.findViewById(R.id.d_btn_ok_MBC);
         _rv = _view.findViewById(R.id.rv_item);
         _edSearch = _view.findViewById(R.id.ed_search);
+        _edSearchP = _view.findViewById(R.id.ed_search_p);
     }
 
     @Override
@@ -254,6 +257,11 @@ public class SearchViewDialogSetting<T> extends BaseDialog implements MyHolderSi
             params.height = listHeight;
             _rv.setLayoutParams(params);
         }
+
+        if (enableFilter)
+            _edSearchP.setVisibility(View.VISIBLE);
+        else
+            _edSearchP.setVisibility(View.GONE);
     }
 
     private void initOnClick() {

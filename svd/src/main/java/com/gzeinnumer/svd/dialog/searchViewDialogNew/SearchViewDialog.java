@@ -250,6 +250,12 @@ public class SearchViewDialog<T> extends SearchViewDialogSetting<T> {
         return this;
     }
 
+
+    public SearchViewDialog enableFilter(boolean enableFilter) {
+        this.enableFilter = enableFilter;
+        return this;
+    }
+
     public void show() {
         this.show(_transaction, SearchViewDialog.TAG);
     }

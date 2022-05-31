@@ -6,7 +6,7 @@
 </h1>
 
 <div align="center">
-    <a><img src="https://img.shields.io/badge/Version-3.1.3-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-3.1.4-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -349,6 +349,8 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/S
 - **3.1.3**
   - Custom Margin/Pading
   - [dimens.xml](https://github.com/gzeinnumer/SearchViewDialog/blob/master/svd/src/main/res/values/dimens.xml)
+- **3.1.4**
+  - Enable Disable Filter
 
 ---
 # Contribution

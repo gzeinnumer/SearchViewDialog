@@ -44,6 +44,8 @@ You can change UI with this configuration.
 - Change Filter Text Field Color
   - `.setTextSearchColor(getResources().getColor(R.color.colorAccent))`
   - `.setTextSearchColor(Color.parseColor("#03DAC5"))`
+- Enable Disable Filter
+  - `.enableFilter(false)` default `true`
 
 **4. Text List Item**
 - Change Filter Text Field Size
