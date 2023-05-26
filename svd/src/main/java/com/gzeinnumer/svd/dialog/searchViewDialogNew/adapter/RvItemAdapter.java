@@ -35,12 +35,12 @@ public class RvItemAdapter<T> extends RecyclerView.Adapter implements Filterable
         protected FilterResults performFiltering(CharSequence constraint) {
             List<BaseModel<T>> filteredList = new ArrayList<>();
             if (constraint == null || constraint.length() == 0) {
-                Collections.sort(listFilter, new Comparator<BaseModel<T>>() {
-                    @Override
-                    public int compare(BaseModel<T> o1, BaseModel<T> o2) {
-                        return o1.toString().toLowerCase().compareTo(o2.toString().toLowerCase());
-                    }
-                });
+//                Collections.sort(listFilter, new Comparator<BaseModel<T>>() {
+//                    @Override
+//                    public int compare(BaseModel<T> o1, BaseModel<T> o2) {
+//                        return o1.toString().toLowerCase().compareTo(o2.toString().toLowerCase());
+//                    }
+//                });
                 filteredList.addAll(listFilter);
             } else {
                 String filterPattern = constraint.toString().toLowerCase().trim();

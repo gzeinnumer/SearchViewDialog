@@ -36,12 +36,17 @@ public class ExampleModel {
         this.address = address;
     }
 
+//    @Override
+//    public String toString() {
+//        return "ExampleModel{" +
+//                "id=" + id +
+//                ", name='" + name + '\'' +
+//                ", address='" + address + '\'' +
+//                '}';
+//    }
+
     @Override
     public String toString() {
-        return "ExampleModel{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                '}';
+        return id + " - " + name + " - " + address;
     }
 }

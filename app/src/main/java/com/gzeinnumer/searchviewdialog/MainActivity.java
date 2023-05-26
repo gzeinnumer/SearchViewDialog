@@ -100,14 +100,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void initDialogSingleGZeinNumer2() {
         ArrayList<ExampleModel> listObject = new ArrayList<>();
-        listObject.add(new ExampleModel(1, "Zein", "Balbar"));
-        listObject.add(new ExampleModel(2, "Zein2", "Balbar2"));
-        listObject.add(new ExampleModel(3, "Zein3", "Balbar3"));
-        listObject.add(new ExampleModel(4, "Zein4", "Balbar4"));
-        listObject.add(new ExampleModel(4, "Zein4", "Balbar4"));
-        listObject.add(new ExampleModel(4, "Zein4", "Balbar4"));
-        listObject.add(new ExampleModel(4, "Zein4", "Balbar4"));
-        listObject.add(new ExampleModel(4, "Zein4", "Balbar4"));
+        listObject.add(new ExampleModel(1, "sit amet, consectetur", "sit amet, consectetur"));
+        listObject.add(new ExampleModel(2, "Lorem ipsum dolor", "Lorem ipsum dolor"));
+        listObject.add(new ExampleModel(3, "adipiscing elit, sed do", "adipiscing elit, sed do"));
+        listObject.add(new ExampleModel(4, "eiusmod tempor", "eiusmod tempor"));
+        listObject.add(new ExampleModel(4, "Duis aute irure dolor", "Duis aute irure dolor"));
+        listObject.add(new ExampleModel(4, "velit esse cillum dolor", "velit esse cillum dolor"));
+        listObject.add(new ExampleModel(4, "Duis aute irure dolor", "Duis aute irure dolor"));
         listObject.add(new ExampleModel(4, "Zein4", "Balbar4"));
 
         new SearchViewDialog<ExampleModel>(getSupportFragmentManager())
