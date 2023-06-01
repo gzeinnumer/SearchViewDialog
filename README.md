@@ -6,7 +6,7 @@
 </h1>
 
 <div align="center">
-    <a><img src="https://img.shields.io/badge/Version-3.1.5-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-3.1.6-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -353,6 +353,8 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/S
   - Enable Disable Filter
 - **3.1.5**
   - Disable order on search
+- **3.1.6**
+  - Max length On Texk
 
 ---
 # Contribution
