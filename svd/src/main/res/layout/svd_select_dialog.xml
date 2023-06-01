@@ -47,7 +47,9 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/ed_search"
-                style="@style/MyTextInputEditText.Spesial.V3.Search" />
+                style="@style/MyTextInputEditText.Spesial.V3.Search"
+                android:maxLength="30"
+                android:maxLines="1" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
