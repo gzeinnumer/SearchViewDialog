@@ -354,7 +354,7 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/S
 - **3.1.5**
   - Disable order on search
 - **3.1.6**
-  - Max length On Texk
+  - Max length On Teks set to 30 and olny single line
 
 ---
 # Contribution
